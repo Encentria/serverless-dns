@@ -116,7 +116,7 @@ const defaults = new Map(
     // primary doh upstream
     CF_DNS_RESOLVER_URL: {
       type: "string",
-      default: "https://cloudflare-dns.com/dns-query",
+      default: "https://dns11.quad9.net/dns-query",
     },
     // secondary doh upstream
     CF_DNS_RESOLVER_URL_2: {
@@ -127,7 +127,7 @@ const defaults = new Map(
     MAX_DNS_RESOLVER_URL: {
       type: "string",
       // must always end with a trailing slash
-      default: "https://max.rethinkdns.com/",
+      default: "https://.com/",
     },
     // max doh request processing timeout some requests may have to wait
     // for blocklists to download before being responded to.
@@ -153,7 +153,7 @@ const defaults = new Map(
     // courtesy db-ip.com/db/download/ip-to-country-lite
     GEOIP_URL: {
       type: "string",
-      default: "https://cfstore.rethinkdns.com/geoip/2022/1667349639157/",
+      default: "",
     },
     // treat all blocklists as wildcards, this means
     // if abc.xyz.com is in any blocklist, then
