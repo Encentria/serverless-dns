@@ -150,7 +150,7 @@ const defaults = new Map(
     MAX_DNS_RESOLVER_URL: {
       type: "string",
       // must always end with a trailing slash
-      default: "https://cloudflare-dns.com",
+      default: "https://max.rethinkdns.com/",
     },
     // max doh request processing timeout some requests may have to wait
     // for blocklists to download before being responded to.
